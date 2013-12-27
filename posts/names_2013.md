@@ -24,24 +24,34 @@ Desirable characteristics to maximize in variable names:
    what is being returned. This enables rule #2.
 
 2. `ret` should be used when naming the value to be returned. The
-   prevailing pattern here involves the construction of an empty
-   mutable object that will be populated. The nature of `ret` is
-   implied by the name of the method.
+   nature of the value in `ret` is implied by the name of the
+   method. The prevailing patterns here involve the construction of an
+   empty mutable object that will be populated, or the setting of a
+   default.
 
-3. `req` and `resp` are vital abbreviations for constructing various
-   service requests and responses. When `resp` is returned, it's
+3. `req`, `resp`, and `conn` are vital abbreviations for constructing
+   objects representing service requests, responses, and
+   connections. A quick aside: when `resp` is returned, it's
    acceptable if not preferred to `return resp` instead of using the
    `ret` naming convention.
 
 4. Avoid plurals when a more container-descriptive name is
-   available. For instance, `connections` implies the iterable nature
-   of the value, but `connection_list`, `connection_set`, and
-   `connection_map` resolve a lot more ambiguity.
+   available. For instance, `conns` implies the iterable nature of the
+   value, but `conn_list`, `conn_set`, and `conn_map` resolve a lot
+   more ambiguity, at a cost of 3-4 characters. I've found this to be
+   most true in function and module scopes, but for member variables
+   where there's only one representation of that iterable present, a
+   plural often looks and sounds better.
 
 5. When transcribing an algorithm from a paper, try hard to keep the
    variable names the same as the pseudocode, even if they break other
    naming conventions. (and don't forget to link to the paper in a
    comment).
+
+6. Use initialisms liberally. Within function scopes (e.g., ) and as a
+   shortening technique for certain frequently-called functions or types
+   (e.g., from operator import itemgetter as IG)
+
 
 - `ctx` is a common abbreviation for `context`
 - `i` and `j` are only variable name choices when there are 1-2
@@ -64,3 +74,16 @@ Desirable characteristics to maximize in variable names:
   types than classes anyways.
 
 \* possible exception: `format`
+
+## Fundamentals
+
+* ALL_CAPS for module-level constants, TitleCase for classes,
+  lower_case for variables
+* _underscore_prefix for internal/private module or type members, as
+  well as freely inside of function scopes where it aids clarity
+  (generally used to indicate "technical detail" or "intermediary
+  value")
+* avoid __name_mangling in all but the most specific cases
+
+
+NOTE TO SELF: attrgetter usage? (works on nested attrs, slow though)

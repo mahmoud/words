@@ -19,7 +19,8 @@ Desirable characteristics to maximize in variable names:
 4. Pronounceable
 
 <small>\* Especially when naming member variables that will necessarily be
-   paired with an owning object (e.g., `myobject.member_var`).</small>
+   paired with an owning object (e.g., `logger.sinks` is better than
+   `logger.logger_sinks`).</small>
 
 ## Key conventions
 
@@ -31,7 +32,7 @@ Desirable characteristics to maximize in variable names:
    method. The prevailing patterns here involve the construction of an
    empty mutable object that will be populated, or the setting of a
    default.
-3. When referring to service requests, responses, and connections, standardize 
+3. When referring to service requests, responses, and connections, standardize
    on `req`, `resp`, and `conn`. A quick aside: when `resp` is returned, it's
    acceptable if not preferred to `return resp` instead of using the
    `ret` naming convention.
@@ -42,13 +43,11 @@ Desirable characteristics to maximize in variable names:
    most true in function and module scopes, but for member variables
    where there's only one representation of that iterable present, a
    plural often looks and sounds better.
-
 5. When transcribing an algorithm from a paper, try hard to keep the
    variable names the same as the pseudocode, even if they break other
    naming conventions. (and don't forget to link to the paper in a
    comment).
-
-6. Use initialisms liberally. Within function scopes 
+6. Use initialisms liberally. Within function scopes
    (e.g.,  `ei_list = [x for x in int_list if not e % 2]`) and as a
    shortening technique for certain frequently-called functions or types
    (e.g., `from operator import itemgetter as IG`)
@@ -88,4 +87,3 @@ These should go without saying, but just to be explicit:
   (generally used to indicate "technical detail" or "intermediary
   value")
 * avoid `__name_mangling` in all but the most specific cases
-

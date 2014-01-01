@@ -49,10 +49,11 @@ Desirable characteristics to maximize in variable names:
    variable names the same as the pseudocode, even if they break other
    naming conventions. (and don't forget to link to the paper in a
    comment).
-6. Use initialisms liberally. Within function scopes 
-   (e.g.,  `ei_list = [x for x in int_list if not e % 2]`) and as a
-   shortening technique for certain frequently-called functions or types
-   (e.g., `from operator import itemgetter as IG`)
+6. Use initialisms liberally: 
+     * For everyday variables: `ei_list = [i for i in int_list if not i % 2]`
+     * As a shortening technique for certain frequently-called 
+     functions or types: `from operator import itemgetter as IG`
+     * For exception instances: `except ValueError as ve:`
 
 ## Even more conventions
 
@@ -72,10 +73,10 @@ Desirable characteristics to maximize in variable names:
 - Avoid any variable consisting solely of repeated characters (`ii`, `jj`)
 - Prefer `_map` over `_dict` (it's shorter, looks better, and sounds
   better, too)
-- Never conflict with builtins* (or keywords, of course). Alternatives:
+- Never conflict with builtins* (or keywords, of course). Oblique strategies:
 
-  * class -> cls (klass looks dumb, stop that. see more notes below.)
-  * type -> *_type (see note below)
+  * `class` -> `cls` (`klass` looks dumb, stop that. see more notes below.)
+  * `type` -> `*_type` (see note below)
 
 - Reserve `cls` for the first argument to `classmethod`s. Use `*_type`
   (e.g., `var_type`) when possible. It's better to think in terms of

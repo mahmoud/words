@@ -19,8 +19,7 @@ Desirable characteristics to maximize in variable names:
 4. Pronounceable
 
 <small>\* Especially when naming member variables that will necessarily be
-   paired with an owning object (e.g., `logger.sinks` is better than
-   `logger.logger_sinks`).</small>
+   paired with an owning object (e.g., `myobject.member_var`).</small>
 
 ## Key conventions
 
@@ -32,10 +31,13 @@ Desirable characteristics to maximize in variable names:
    method. The prevailing patterns here involve the construction of an
    empty mutable object that will be populated, or the setting of a
    default.
-3. When referring to service requests, responses, and connections, standardize
-   on `req`, `resp`, and `conn`. A quick aside: when `resp` is returned, it's
-   acceptable if not preferred to `return resp` instead of using the
-   `ret` naming convention.
+3. When referring to service requests, responses, and connections, standardize 
+   on `req`, `resp`, and `conn`. `res` or `results` is a good name 
+   for any data loaded from a successful response 
+   (e.g., `res = json.loads(resp.text)`).
+   A quick aside: when `resp` is returned, it's acceptable if not 
+   preferred to `return resp` instead of using the `ret` naming 
+   convention.
 4. Avoid plurals when a more container-descriptive name is
    available. For instance, `conns` implies the iterable nature of the
    value, but `conn_list`, `conn_set`, and `conn_map` resolve a lot
@@ -47,21 +49,26 @@ Desirable characteristics to maximize in variable names:
    variable names the same as the pseudocode, even if they break other
    naming conventions. (and don't forget to link to the paper in a
    comment).
-6. Use initialisms liberally. Within function scopes
+6. Use initialisms liberally. Within function scopes 
    (e.g.,  `ei_list = [x for x in int_list if not e % 2]`) and as a
    shortening technique for certain frequently-called functions or types
    (e.g., `from operator import itemgetter as IG`)
 
 ## Even more conventions
 
-- `ctx` is a common abbreviation for `context`
+- `ctx` is a common abbreviation for `context`, same goes for 
+  `mgr`/`manager`, but this style of abbreviation should never 
+  be used for class names and virtually never be used for 
+  module-level constants.
 - `i` and `j` are only variable name choices when there are 1-2
   counters in a relatively short function.
 - `_` is only valid in the most local of scopes. Avoid using it for
   escaping functions (use `esc`)
 - Any single-letter variable name should be local (or
   closure/nonlocal-level, at most), definitely not for globals or
-  members.
+  members. List comprehensions are a good place for single-character 
+  names, where the first letter of the iterable's name is a natural 
+  choice (e.g., `[c for c in conn_list if c.is_secure]`).
 - Avoid any variable consisting solely of repeated characters (`ii`, `jj`)
 - Prefer `_map` over `_dict` (it's shorter, looks better, and sounds
   better, too)
@@ -86,4 +93,7 @@ These should go without saying, but just to be explicit:
   well as freely inside of function scopes where it aids clarity
   (generally used to indicate "technical detail" or "intermediary
   value")
-* avoid `__name_mangling` in all but the most specific cases
+* Numbers in variable names are inexcusable. Even though this makes 
+  names like `result1` unlikely, watch out for the trailing `l` 
+  (but names like `level` are fine)
+* Avoid `__name_mangling` in all but the most specific cases

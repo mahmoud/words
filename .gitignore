@@ -1,3 +1,5 @@
+pelican/output
+
 *.py[cod]
 
 # emacs

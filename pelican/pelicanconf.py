@@ -12,7 +12,7 @@ _POSTS_PATH = pjoin(os.path.dirname(_CUR_DIR), 'posts')
 
 AUTHOR = u'Mahmoud Hashemi'
 SITENAME = u'Sedimental'
-SITEURL = ''
+SITEURL = 'http://mahmoud.github.io/words'
 TIMEZONE = "America/Los_Angeles"
 
 THEME = _THEME_PATH

@@ -81,3 +81,17 @@ difference between a Revision and a RecentChange? How are Namespaces
 formmed? These are entities referred to by countless operations in the
 MediaWiki API, but aside from a loose correlation with the database
 schema, there's never any overall taxonomy defined.
+
+The clearer, more consistent the definitions of these entities, the
+more the API lends itself to easy, intuitive learning, hence teaching,
+thus documentation. Things will click and "just work" and so forth.
+
+APIs lacking clearly defined, consistent entities will have present a
+major challenge to creating successful documentation. At the same
+time, while APIs can't change, documentation can. If documentation
+calls out these implicit entities, clearly connecting the dots, it can
+actually heal a "broken" API.
+
+(Oh yeah, PS, accuracy. Inaccuracy or out-of-dateness is the ultimate
+betrayal a document can perpetrate on its project. It saps developer
+trust and confidence in the whole project, not just the document.)

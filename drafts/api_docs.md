@@ -54,3 +54,30 @@ documentation effective and excellent.
 * Ideally, there should be a reverse index linking reference sections
   back to any referencing prose sections (such as the Getting Started
   section). This maximizes access/exposure to examples.
+
+
+## Entities
+
+Getting serious now. Most very basic services are of an RPC type,
+"remote procedure call". Actions. Verbs. Many newer, more polished
+APIs are based on resources. Entities. Nouns.
+
+Good services run the gamut, and purity is neither here nor
+there. (self-consistency > purity) It doesn't matter if a service is
+more entity-oriented or action-oriented, there are always a mix of
+both. It is absolutely critical that both get sufficient
+treatment.
+
+The biggest, most common mistake in documenting big, powerful APIs is
+to document individual operations, without overarching descriptions of
+the implicit entities involved across actions. Prose sections
+describing the relationships of entities between each other, as well
+as their respective actions are the "missing manual" for virtually every
+API out there.
+
+Concretely, for MediaWiki, what is a Page? What's the difference
+between an Article and a Page? What is a Revision? What is the
+difference between a Revision and a RecentChange? How are Namespaces
+formmed? These are entities referred to by countless operations in the
+MediaWiki API, but aside from a loose correlation with the database
+schema, there's never any overall taxonomy defined.

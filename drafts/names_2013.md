@@ -1,17 +1,19 @@
 # On names
 
-* Naming is hard. OK, not really\*, but maladroit naming definitely
-  impedes the flow of programming.
-* Consistent naming improves code readability and maintainability.
-* Brevity is key, and often only possible through good naming
-  conventions.
-
-<small>\* There are exceptions, especially in the area of directional
-relationships, like "following" and "follower"</small>
+Naming is hard. One of the two hard problems left in computer science,
+as the saying goes. That might be a bit much, but naming can make or
+break a codebase. Not to mention how that clumsy time spent searching
+for names impedes productive programming flow.
 
 ## Values
 
-Desirable characteristics to maximize in variable names:
+First things first, this isn't some creative writing post. There are
+at least two types of naming, one that's creative, like naming a
+project or a child, and the second, more mechanical, routine variant,
+which is reserved for naming interfaces, variables, and APIs. There
+are techniques for both, but the former will have to wait.
+
+Now, desirable characteristics to maximize in variable names:
 
 1. Accurate
 2. Meaningful
@@ -31,12 +33,12 @@ Desirable characteristics to maximize in variable names:
    method. The prevailing patterns here involve the construction of an
    empty mutable object that will be populated, or the setting of a
    default.
-3. When referring to service requests, responses, and connections, standardize 
-   on `req`, `resp`, and `conn`. `res` or `results` is a good name 
-   for any data loaded from a successful response 
+3. When referring to service requests, responses, and connections, standardize
+   on `req`, `resp`, and `conn`. `res` or `results` is a good name
+   for any data loaded from a successful response
    (e.g., `res = json.loads(resp.text)`).
-   A quick aside: when `resp` is returned, it's acceptable if not 
-   preferred to `return resp` instead of using the `ret` naming 
+   A quick aside: when `resp` is returned, it's acceptable if not
+   preferred to `return resp` instead of using the `ret` naming
    convention.
 4. Avoid plurals when a more container-descriptive name is
    available. For instance, `conns` implies the iterable nature of the
@@ -49,17 +51,17 @@ Desirable characteristics to maximize in variable names:
    variable names the same as the pseudocode, even if they break other
    naming conventions. (and don't forget to link to the paper in a
    comment).
-6. Use initialisms liberally: 
+6. Use initialisms liberally:
      * For everyday variables: `ei_list = [i for i in int_list if not i % 2]`
-     * As a shortening technique for certain frequently-called 
+     * As a shortening technique for certain frequently-called
      functions or types: `from operator import itemgetter as IG`
      * For exception instances: `except ValueError as ve:`
 
 ## Even more conventions
 
-- `ctx` is a common abbreviation for `context`, same goes for 
-  `mgr`/`manager`, but this style of abbreviation should never 
-  be used for class names and virtually never be used for 
+- `ctx` is a common abbreviation for `context`, same goes for
+  `mgr`/`manager`, but this style of abbreviation should never
+  be used for class names and virtually never be used for
   module-level constants.
 - `i` and `j` are only variable name choices when there are 1-2
   counters in a relatively short function.
@@ -67,8 +69,8 @@ Desirable characteristics to maximize in variable names:
   escaping functions (use `esc`)
 - Any single-letter variable name should be local (or
   closure/nonlocal-level, at most), definitely not for globals or
-  members. List comprehensions are a good place for single-character 
-  names, where the first letter of the iterable's name is a natural 
+  members. List comprehensions are a good place for single-character
+  names, where the first letter of the iterable's name is a natural
   choice (e.g., `[c for c in conn_list if c.is_secure]`).
 - Avoid any variable consisting solely of repeated characters (`ii`, `jj`)
 - Prefer `_map` over `_dict` (it's shorter, looks better, and sounds
@@ -94,7 +96,7 @@ These should go without saying, but just to be explicit:
   well as freely inside of function scopes where it aids clarity
   (generally used to indicate "technical detail" or "intermediary
   value")
-* Numbers in variable names are inexcusable. Even though this makes 
-  names like `result1` unlikely, watch out for the trailing `l` 
+* Numbers in variable names are inexcusable. Even though this makes
+  names like `result1` unlikely, watch out for the trailing `l`
   (but names like `level` are fine)
 * Avoid `__name_mangling` in all but the most specific cases

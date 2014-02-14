@@ -91,7 +91,26 @@ with developer timelines in mind. In our experience, it's not uncommon
 for Python projects to undergo three or more iterations in the time it
 C++ and Java to do just one.
 
-5. Python does not scale
+## 5. Python does not scale
+
+Scale has many definitions, but by any definition, YouTube is a web
+site at scale. More than 1 billion unique visitors per month, over 100
+hours of uploads per minute, and 20% of peak Internet bandwidth, all
+with Python as a core technology. Dropbox, Disqus, Eventbrite, Twilio,
+EVE Online, Second Life, and yes eBay all have scaling stories that
+prove scale is more than just possible with Python: it's a pattern.
+
+The key to success is simplicity and consistency. CPython, the primary
+Python virtual machine, maximizes these characteristics, which makes
+for a very predictable runtime. One would be hard pressed to find
+Python programmers concerned about garbage collection pauses. With
+strong platform and networking support, Python naturally lends itself
+to horizontal scalability.
+
+Additionally, scaling is all about measurement and iteration. Python
+is built with profiling and optimization in mind. See Myth #4 for more
+details on how to vertically scale Python.
+
 6. Python is a new language
 7. Python is not for big projects
 8. Python is not secure software

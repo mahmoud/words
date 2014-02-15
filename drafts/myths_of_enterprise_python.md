@@ -131,11 +131,54 @@ people. Dropbox and other teams were similarly lean. So, can Python
 scale to large teams?
 
 Bank of America actually has over 2,000 Python developers, so you
-better believe it buster.
+better believe it buster. Same goes for YouTube. Big products and big
+teams use Python every day. Python has excellent modularity and
+packaging characteristics, but beyond a certain point, much of the
+advice stays the same: Tooling, conventions, and code review make big
+projects a reality.
+
+Luckily, Python starts with a good baseline on those fronts as well. We use PyFlakes
 
 8. Python is not secure
+
+Python's lightweight nature may not make it seem formidable, but the
+intuition here can be misleading. One central tenet of security is to
+present as small a target as possible, and CPython achieves this by
+being a very simple and easily-auditable VM. In fact, a recent
+analysis by Fortify Software gave CPython their highest rating.
+
+Python also has an extensive array of open-source, industry-standard
+security libraries. At PayPal we find that a combination of PyOpenSSL,
+PyCrypto, and hashlib cover all of PayPal's diverse security and
+performance needs.
+
 9. Python is a web-only language
+
+(Revisit this one. How is it different from #2)
+
 10. Python programmers are scarce
+
+There is some truth to this myth. There are not as many Python
+developers as PHP or Java developers, mostly due to a combined
+interaction of industry demand and education, though trends in
+education suggest that this may change.
+
+That said, Python developers are far from scarce. There are millions
+worldwide, as evidenced by the dozens of Python conferences, tens of
+thousands of StackOverflow questions, and companies like YouTube, Bank
+of America, and LucasArts/Dreamworks employing Python developers by
+the hundreds and thousands. At eBay we have over 200 developers who
+use Python on a regular basis, so what's the trick?
+
+Well, one does not need to find what one can create. Python is
+exceptionally easy to learn, and is a first programming language for
+children and university students alike. At eBay, it only takes one
+week to show real results for a new Python programmer, and they often
+really start to shine as quickly as 2-3 months, all made possible by
+the Internet's rich cache of interactive tutorials, books,
+documentation, and open-source codebases.
+
+Another important factor to consider is that
 
 Bonus: Python is not a good language, Python programmers are just good
 programmers

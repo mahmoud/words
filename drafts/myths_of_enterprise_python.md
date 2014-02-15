@@ -97,8 +97,9 @@ Scale has many definitions, but by any definition, YouTube is a web
 site at scale. More than 1 billion unique visitors per month, over 100
 hours of uploads per minute, and 20% of peak Internet bandwidth, all
 with Python as a core technology. Dropbox, Disqus, Eventbrite, Twilio,
-EVE Online, Second Life, and yes eBay all have scaling stories that
-prove scale is more than just possible with Python: it's a pattern.
+Instagram, EVE Online, Second Life, and, yes, eBay all have scaling
+stories that prove scale is more than just possible with Python: it's
+a pattern.
 
 The key to success is simplicity and consistency. CPython, the primary
 Python virtual machine, maximizes these characteristics, which makes
@@ -111,9 +112,28 @@ Additionally, scaling is all about measurement and iteration. Python
 is built with profiling and optimization in mind. See Myth #4 for more
 details on how to vertically scale Python.
 
-6. Python is a new language
-7. Python is not for big projects
-8. Python is not secure software
+## 6. Python is a new language
+
+What with all the startups using it and kids learning it these days,
+it's easy to see how this myth still persists. Python is actually 23
+years old, originally released in 1991, 4 years before Java.
+
+TODO: link to Guido's history
+TODO: rustle up a list early big-name users
+
+## 7. Python is not for big projects
+
+Myth #5 discussed Python at scale, but there is another aspect to
+scaling worth discussing: people. While Instagram reached hundreds of
+millions of hits a day, at the time of Facebook's billion dollar
+purchase, the whole company was still only a group of a dozen or so
+people. Dropbox and other teams were similarly lean. So, can Python
+scale to large teams?
+
+Bank of America actually has over 2,000 Python developers, so you
+better believe it buster.
+
+8. Python is not secure
 9. Python is a web-only language
 10. Python programmers are scarce
 

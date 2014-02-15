@@ -1,9 +1,25 @@
-# Python Myth Busting
+# 10 Myths of Enterprise Python
 
-## 1. Python is interpreted
+TODO: tone? personal introduction?
 
-While Python does not require a separate compiler toolchain like C++,
-it is in fact compiled to bytecode, much like Java and many other
+A list of the most common concerns I have had to address over the
+years of building Python support at PayPal, and now eBay.
+
+Python has enjoyed many years of grassroots usage and support from
+developers across eBay, with PayPal's history of Python usage
+extending back to the year 2000. Today, Python is used for over 50
+projects across eBay Inc., including:
+
+ * Features and products, such as eBay Now
+ * Operations and infrastructure, vis a vis OpenStack
+ * Mid-tier services and applications, like the one used to set PayPal's prices
+ * Monitoring agents and interfaces
+ * Too many developer tools to count
+
+## 1. Python is not compiled
+
+While not requiring a separate compiler toolchain like C++,
+Python is in fact compiled to bytecode, much like Java and many other
 compiled languages. Further compilation steps, if any, are at the
 discretion of the runtime, be it CPython, PyPy, Jython/JVM,
 IronPython/CLR, or some other process virtual machine.
@@ -137,9 +153,22 @@ packaging characteristics, but beyond a certain point, much of the
 advice stays the same: Tooling, conventions, and code review make big
 projects a reality.
 
-Luckily, Python starts with a good baseline on those fronts as well. We use PyFlakes
+Luckily, Python starts with a good baseline on those fronts as
+well. We use PyFlakes and other tools to perform static analysis of
+Python code before it gets checked in, as well as adhering to PEP8,
+Python's language-wide base style guide.
 
-8. Python is not secure
+Finally, it should be noted that, in addition to the scheduling
+speedups mentioned in Myth #4 and #5, projects using Python generally
+require fewer developers, as well. Our most common success story
+starts with a Java or C++ project slated to take a team of 3-5
+developers somewhere between 2-6 months, and ends with a single
+motivated developer completing the project in 2-6 weeks.
+
+A miracle for some, but a fact of modern development, and often a
+necessity of competitive business.
+
+## 8. Python is not secure
 
 Python's lightweight nature may not make it seem formidable, but the
 intuition here can be misleading. One central tenet of security is to
@@ -152,11 +181,11 @@ security libraries. At PayPal we find that a combination of PyOpenSSL,
 PyCrypto, and hashlib cover all of PayPal's diverse security and
 performance needs.
 
-9. Python is a web-only language
+## 9. Python is a web-only language
 
 (Revisit this one. How is it different from #2)
 
-10. Python programmers are scarce
+## 10. Python programmers are scarce
 
 There is some truth to this myth. There are not as many Python
 developers as PHP or Java developers, mostly due to a combined
@@ -178,7 +207,11 @@ really start to shine as quickly as 2-3 months, all made possible by
 the Internet's rich cache of interactive tutorials, books,
 documentation, and open-source codebases.
 
-Another important factor to consider is that
+Another important factor to consider is that projects using Python
+simply do not require as many developers as other projects. As
+mentioned in Myth #7, lean, effective teams like Instagram are a
+common trope in Python projects, and this has certainly been our
+experience at eBay and PayPal.
 
-Bonus: Python is not a good language, Python programmers are just good
-programmers
+TODO: Honorable mention for most annoying conceit: Python is not a good
+language, Python programmers are just good programmers

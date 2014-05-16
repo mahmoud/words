@@ -8,7 +8,8 @@ Wikimedia wikis added OAuth.
 
 Still doesn't seem like a big deal? When one of the biggest websites
 in the world offers free hosting, free infrastructure, a free
-platform, it's a big deal.
+platform, it's a big deal. Wikipedia's storage and bandwidth,
+combined with a powerful user system, comprises a formidable platform.
 
 Wikipedia is a Wikimedia-run wiki. Last I checked, Wikipedia was the
 5th most trafficked website in the world. Bigger than Amazon, bigger

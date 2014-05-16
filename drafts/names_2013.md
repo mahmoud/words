@@ -84,7 +84,7 @@ Now, desirable characteristics to maximize in variable names:
   (e.g., `var_type`) when possible. It's better to think in terms of
   types than classes anyways.
 
-<small>\* possible exception: `format`</small>
+<small>\* possible exceptions: `format`, `next`, `input`, `raw_input`</small>
 
 ## Fundamentals
 

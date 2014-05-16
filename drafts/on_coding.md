@@ -1,9 +1,9 @@
 # On coding
 
-Once I tried programming ever day.  The basis was simple: If others
-can do activities I find difficult (e.g., recreational running) on a
-daily routine, I should be able to do recreational activities I enjoy
-(e.g., open-source development) daily as well.
+Once I tried programming every day. It was a simple principle: If
+others can do activities I find difficult (e.g., recreational running)
+on a daily routine, I should be able to do recreational activities I
+enjoy (e.g., open-source development) daily as well.
 
 This ended up lasting from January 17, 2013 to March 31, 2014. 438
 days.
@@ -15,8 +15,8 @@ creative task and turns it into a performance task. Whether athletic
 or aesthetic, professional or recreational, performance is primarily
 about reproduction.
 
-Some might say, "But performers are also creative! They create
-interpretations of their task." This is true, but ask a musician to
+Some might say, "But performers are also creative! Performance creates
+interpretations of its subjects." This is true, but ask a musician to
 perform a distinct or wholly original interpretation night after night
 and, if they don't scoff, they too will soon be tapped.
 

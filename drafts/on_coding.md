@@ -1,9 +1,12 @@
 # On coding
 
-Once I tried programming ever day for 438 days. The basis was simple:
-If others can do activities I find difficult (e.g., recreational
-running) on a daily routine, I should be able to do recreational
-activities I enjoy (e.g., open-source development) daily as well.
+Once I tried programming ever day.  The basis was simple: If others
+can do activities I find difficult (e.g., recreational running) on a
+daily routine, I should be able to do recreational activities I enjoy
+(e.g., open-source development) daily as well.
+
+This ended up lasting from January 17, 2013 to March 31, 2014. 438
+days.
 
 Overall this was a good experience and I'm glad for it. However, I'm
 not sure I'd recommend it broadly. It changes the way you look at code

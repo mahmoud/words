@@ -1,4 +1,4 @@
-# 10 Myths of Enterprise Python
+# 9 Myths of Enterprise Python
 
 TODO: tone? personal introduction?
 
@@ -16,7 +16,7 @@ projects across eBay Inc., including:
  * Monitoring agents and interfaces
  * Too many developer tools to count
 
-## 1. Python is not compiled
+## Myth #1: Python is not compiled
 
 While not requiring a separate compiler toolchain like C++,
 Python is in fact compiled to bytecode, much like Java and many other
@@ -24,7 +24,7 @@ compiled languages. Further compilation steps, if any, are at the
 discretion of the runtime, be it CPython, PyPy, Jython/JVM,
 IronPython/CLR, or some other process virtual machine.
 
-## 2. Python is a scripting language
+## Myth #2: Python is a scripting language
 
 Python can indeed be used for scripting, and is one of the forerunners
 of the domain due to its simple syntax, cross-platform support, and
@@ -53,7 +53,7 @@ Not to mention websites and web services aplenty.
 [neuroscience]: http://www.frontiersin.org/neuroinformatics/researchtopics/Python_in_neuroscience/8
 [pentest]: http://dirk-loss.de/python-tools.htm
 
-## 3. Python is weakly-typed
+## Myth #3: Python is weakly-typed
 
 Python is dynamically typed, and in fact more strongly-typed than
 Java. Java has a split type system for primitives and objects, with
@@ -61,7 +61,7 @@ Java. Java has a split type system for primitives and objects, with
 Python has a unified strong type system. And yes, the type of ``None``
 is well-specified.
 
-## 4. Python is slow
+## Myth #4: Python is slow
 
 First, a critical distinction: Python is a programming language, not a
 runtime.
@@ -107,7 +107,7 @@ with developer timelines in mind. In our experience, it's not uncommon
 for Python projects to undergo three or more iterations in the time it
 C++ and Java to do just one.
 
-## 5. Python does not scale
+## Myth #5: Python does not scale
 
 Scale has many definitions, but by any definition, YouTube is a web
 site at scale. More than 1 billion unique visitors per month, over 100
@@ -128,7 +128,7 @@ Additionally, scaling is all about measurement and iteration. Python
 is built with profiling and optimization in mind. See Myth #4 for more
 details on how to vertically scale Python.
 
-## 6. Python is a new language
+## Myth #6: Python is a new language
 
 What with all the startups using it and kids learning it these days,
 it's easy to see how this myth still persists. Python is actually 23
@@ -137,7 +137,7 @@ years old, originally released in 1991, 4 years before Java.
 TODO: link to Guido's history
 TODO: rustle up a list early big-name users
 
-## 7. Python is not for big projects
+## Myth #7: Python is not for big projects
 
 Myth #5 discussed Python at scale, but there is another aspect to
 scaling worth discussing: people. While Instagram reached hundreds of
@@ -168,7 +168,7 @@ motivated developer completing the project in 2-6 weeks.
 A miracle for some, but a fact of modern development, and often a
 necessity of competitive business.
 
-## 8. Python is not secure
+## Myth #8: Python is not secure
 
 Python's lightweight nature may not make it seem formidable, but the
 intuition here can be misleading. One central tenet of security is to
@@ -181,11 +181,7 @@ security libraries. At PayPal we find that a combination of PyOpenSSL,
 PyCrypto, and hashlib cover all of PayPal's diverse security and
 performance needs.
 
-## 9. Python is a web-only language
-
-(Revisit this one. How is it different from #2)
-
-## 10. Python programmers are scarce
+## Myth #9: Python programmers are scarce
 
 There is some truth to this myth. There are not as many Python
 developers as PHP or Java developers, mostly due to a combined

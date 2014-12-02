@@ -1,19 +1,29 @@
 # 9 Myths of Enterprise Python
 
-TODO: tone? personal introduction?
-
-A list of the most common concerns I have had to address over the
+Frequent readers of this blog are no doubt aware of the increasingly
+diverse techno-pluralist environment here at PayPal. In past posts
+we've showcased Java, JavaScript, Objective C, and Scala, but wouldn't
+you know it, PayPal's also got a long history with C++, Ruby (with the
+acquisition of Braintree), and you guessed it, Python. In this series
+of posts, I'll be detailing how the eBay/PayPal Python community grew
+from just under 25 engineers in 2011 to over 260 in 2014, starting
+with a list of the most common concerns I have had to address over the
 years of building Python support at PayPal, and now eBay.
 
-Python has enjoyed many years of grassroots usage and support from
-developers across eBay, with PayPal's history of Python usage
-extending back to the year 2000. Today, Python is used for over 50
+Python has always been a language of choice for developers. Even when
+there was no official support from management, developers go the extra
+mile to be able to reap the rewards of Python development. Python has
+enjoyed many years of grassroots usage and support from developers
+across eBay; code archaeology has revealed signs of PayPal Python
+usage dating back as early as Y2K. Today, Python is used for over 50
 projects across eBay Inc., including:
 
  * Features and products, such as eBay Now
  * Operations and infrastructure, vis a vis OpenStack
  * Mid-tier services and applications, like the one used to set PayPal's prices
- * Monitoring agents and interfaces
+ * Monitoring agents and interfaces, used for several deployment and security use cases
+ * Batch jobs
+ *
  * Too many developer tools to count
 
 ## Myth #1: Python is not compiled
@@ -33,25 +43,51 @@ ubiquity among Linux, Macs, and other Unix machines.
 In fact, Python may be one of the most flexible technologies among
 general-use programming languages. To list just a few:
 
-  1. Telephony infrastructure (Twilio)
-  2. Payments systems (PayPal, Balanced Payments)
+  1. Telephony infrastructure ([Twilio][twilio])
+  2. Payments systems ([PayPal][paypal], [Balanced Payments][balanced])
   3. Neuroscience and psychology ([citation][neuroscience])
-  4. Numerical analysis and engineering
-  5. Animation (LucasArts, Disney, Dreamworks)
-  6. Gaming backends (Eve Online, Second Life, Battlefield)
-  7. Email infrastructure (Mailman, Mailgun)
-  8. Media storage and processing (YouTube, Instagram, Dropbox)
-  9. Operations and systems management (Rackspace, OpenStack)
-  10. Natural language processing (NLTK)
-  11. Machine learning and computer vision (scikit-learn, Orange, SimpleCV)
-  12. Security and penetration testing ([citation][pentest])
-  13. Big Data (Disco, Hadoop support)
-  14. DNS (BIND 10)
+  4. Numerical analysis and engineering ([numpy][numpy] and [many more][numerical])
+  5. Animation ([LucasArts][lucasarts], [Disney][disneytech], [Dreamworks][dreamworks])
+  6. Gaming backends ([Eve Online][eve_online], [Second Life][second_life], [Battlefield][battlefield], and [so many others][other_games])
+  7. Email infrastructure ([Mailman][mailman], [Mailgun][mailgun])
+  8. Media storage and processing ([YouTube][youtube], [Instagram][instagram], [Dropbox][dropboxtech])
+  9. Operations and systems management ([Rackspace][rackspace], [OpenStack][openstack])
+  10. Natural language processing ([NLTK][nltk])
+  11. Machine learning and computer vision ([scikit-learn][scikit], [Orange][orange], [SimpleCV][simplecv])
+  12. Security and penetration testing ([so many][pentest])
+  13. Big Data ([Disco][disco], [Hadoop support][hadoop])
+  14. DNS ([BIND 10][bind10])
 
 Not to mention websites and web services aplenty.
 
+[twilio]: https://en.wikipedia.org/wiki/Twilio
 [neuroscience]: http://www.frontiersin.org/neuroinformatics/researchtopics/Python_in_neuroscience/8
-[pentest]: http://dirk-loss.de/python-tools.htm
+[paypal]: https://en.wikipedia.org/wiki/PayPal
+[balanced]: https://www.balancedpayments.com/
+[numpy]: https://en.wikipedia.org/wiki/NumPy
+[numerical]: https://wiki.python.org/moin/NumericAndScientific
+[lucasarts]: https://en.wikipedia.org/wiki/LucasArts
+[disneytech]: http://www.disneyanimation.com/technology/opensource
+[dreamworks]: https://en.wikipedia.org/wiki/DreamWorks_Animation
+[eve_online]: https://en.wikipedia.org/wiki/Eve_Online
+[second_life]: https://en.wikipedia.org/wiki/Second_Life
+[battlefield]: https://en.wikipedia.org/wiki/Battlefield_(series)
+[other_games]: https://wiki.python.org/moin/PythonGames
+[mailman]: https://en.wikipedia.org/wiki/GNU_Mailman
+[mailgun]: http://www.rackspace.com/mailgun
+[youtube]: https://en.wikipedia.org/wiki/YouTube
+[instagram]: http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances
+[dropboxtech]: https://tech.dropbox.com/
+[rackspace]: https://en.wikipedia.org/wiki/Rackspace
+[openstack]: http://www.openstack.org/
+[nltk]: http://www.nltk.org/
+[scikit]: http://scikit-learn.org/stable/
+[orange]: http://orange.biolab.si/
+[simplecv]: http://simplecv.org/
+[pentest]: https://github.com/dloss/python-pentest-tools
+[bind10]: http://www.isc.org/blogs/programming-languages-for-bind-10/
+[disco]: http://discoproject.org/
+[hadoop]: http://blog.cloudera.com/blog/2013/01/a-guide-to-python-frameworks-for-hadoop/
 
 ## Myth #3: Python is weakly-typed
 
@@ -68,13 +104,18 @@ runtime.
 
 There are several Python implementations.
 
-  1. **CPython** is the reference implementation, and also the most widely
+  1. [**CPython**][cpython] is the reference implementation, and also the most widely
      distributed and used.
-  2. **Jython** is a mature implementation of Python for usage with the JVM.
-  3. **IronPython** is Microsoft's Python for the Common Language Runtime, aka .NET.
-  4. **PyPy** is an up-and-coming implementation of Python, with advanced
+  2. [**Jython**][jython] is a mature implementation of Python for usage with the JVM.
+  3. [**IronPython**][ironpython] is Microsoft's Python for the Common Language Runtime, aka .NET.
+  4. [**PyPy**][pypy] is an up-and-coming implementation of Python, with advanced
      features such as JIT compilation, incremental garbage collection,
      and more.
+
+[cpython]: https://en.wikipedia.org/wiki/CPython
+[jython]: https://en.wikipedia.org/wiki/Jython
+[ironpython]: https://en.wikipedia.org/wiki/IronPython
+[pypy]: https://en.wikipedia.org/wiki/PyPy
 
 Each runtime has its own performance characteristics, and none of them
 are slow per se. The more important point here is that it is a mistake
@@ -132,10 +173,15 @@ details on how to vertically scale Python.
 
 What with all the startups using it and kids learning it these days,
 it's easy to see how this myth still persists. Python is actually 23
-years old, originally released in 1991, 4 years before Java.
+years old, originally released in 1991, 4 years before Java. A
+now-famous early usage of Python was in 1996: Google's first
+successful web crawler.
 
-TODO: link to Guido's history
-TODO: rustle up a list early big-name users
+If you're curious about the long history of Python, Guido van Rossum,
+Python's creator, [has taken the care to tell the whole
+story][python_history].
+
+[python_history]: http://python-history.blogspot.com/2009/01/introduction-and-overview.html
 
 ## Myth #7: Python is not for big projects
 
@@ -208,6 +254,3 @@ simply do not require as many developers as other projects. As
 mentioned in Myth #7, lean, effective teams like Instagram are a
 common trope in Python projects, and this has certainly been our
 experience at eBay and PayPal.
-
-TODO: Honorable mention for most annoying conceit: Python is not a good
-language, Python programmers are just good programmers

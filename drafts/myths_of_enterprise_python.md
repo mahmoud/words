@@ -4,20 +4,19 @@ Frequent readers of this blog are no doubt aware of the increasingly
 diverse techno-pluralist environment here at PayPal. In past posts
 we've showcased Java, JavaScript, Objective C, and Scala, but wouldn't
 you know it, PayPal's also got a long history with C++, Ruby (with the
-acquisition of Braintree), and you guessed it, [Python][python]. In
+acquisition of [Braintree][braintree]), and you guessed it, [Python][python]. In
 this series of posts, I'll be detailing how the eBay/PayPal Python
 community grew from just under 25 engineers in 2011 to over 260 in
 2014, starting with a list of the most common concerns I have had to
 address over the years of building Python support at PayPal, and now
 eBay.
 
-Python has always been a language of choice for developers. Even when
-there was no official support from management, developers went the
-extra mile to be able to reap the rewards of Python
-development. Python has enjoyed many years of grassroots usage and
-support from developers across eBay, Inc.; code archaeology has
-revealed signs of PayPal Python usage dating back as early as the year
-2000.
+Python has always been a language of choice for developers. Even
+before official support from management, developers went the extra
+mile to be able to reap the rewards of Python development. Python has
+enjoyed many years of grassroots usage and support from developers
+across eBay, Inc.. I've personally found Python code at PayPal dating
+back to Y2K, before the eBay acquisition.
 
 Today, Python is used for over 50 projects across eBay, Inc.,
 including:
@@ -29,6 +28,7 @@ including:
   * Batch jobs for data import, price adjustment, and more
   * And far too many developer tools to count
 
+[braintree]: https://www.braintreepayments.com/
 [python]: https://www.python.org/
 [ebay_local]: http://www.ebay.com/lcl/
 [redlaser]: http://redlaser.com/
@@ -323,6 +323,16 @@ experience at eBay and PayPal.
 [python_kids]: http://www.nostarch.com/pythonforkids
 [python_google_class]: https://developers.google.com/edu/python/?csw=1
 
-## What to do with nine ex-myths
+## Cleaning the slate
 
-Mythology can be a fun pastime. Discussions around these nine myths
+Mythology can be a fun pastime. Discussions around these myths remain
+some of the most active and educational both internally and
+externally. It's not entirely tedious, because mplied in every
+discussion about a myth is a recognition of Python's strengths. Such a
+discussion is a sign of steadily growing interest. That said, here's
+hoping that this post managed to cool the flames of the most prevalent
+flame wars. If I've cleaned even one slate for a project proposal to
+talk about the actual work at hand, I've done my duty.
+
+Keep an eye out for future posts where I'll dive deeper into the
+details touched on in this overview. In the meantime, happy coding!

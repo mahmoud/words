@@ -53,7 +53,7 @@ general-use programming languages. To list just a few:
   1. Telephony infrastructure ([Twilio][twilio])
   2. Payments systems ([PayPal][paypal], [Balanced Payments][balanced])
   3. Neuroscience and psychology ([citation][neuroscience])
-  4. Numerical analysis and engineering ([numpy][numpy] and [many more][numerical])
+  4. Numerical analysis and engineering ([numpy][numpy], [numba][numba], and [many more][numerical])
   5. Animation ([LucasArts][lucasarts], [Disney][disneytech], [Dreamworks][dreamworks])
   6. Gaming backends ([Eve Online][eve_online], [Second Life][second_life], [Battlefield][battlefield], and [so many others][other_games])
   7. Email infrastructure ([Mailman][mailman], [Mailgun][mailgun])
@@ -72,6 +72,7 @@ Not to mention websites and web services aplenty.
 [paypal]: https://en.wikipedia.org/wiki/PayPal
 [balanced]: https://www.balancedpayments.com/
 [numpy]: https://en.wikipedia.org/wiki/NumPy
+[numba]: http://numba.pydata.org/
 [numerical]: https://wiki.python.org/moin/NumericAndScientific
 [lucasarts]: https://en.wikipedia.org/wiki/LucasArts
 [disneytech]: http://www.disneyanimation.com/technology/opensource
@@ -179,36 +180,40 @@ C++ and Java to do just one.
 
 Scale has many definitions, but by any definition, YouTube is a web
 site at scale. More than 1 billion unique visitors per month, over 100
-hours of uploads per minute, and 20% of peak Internet bandwidth, all
-with Python as a core technology. Dropbox, Disqus, Eventbrite, Twilio,
-Instagram, EVE Online, Second Life, and, yes, eBay all have scaling
-stories that prove scale is more than just possible with Python: it's
-a pattern.
+hours of uploaded video per minute, and 20% of peak Internet
+bandwidth, all with Python as a core technology. Dropbox, Disqus,
+Eventbrite, Twilio, Instagram, EVE Online, Second Life, and, yes, eBay
+and PayPal all have Python scaling stories that prove scale is more
+than just possible: it's a pattern.
 
 The key to success is simplicity and consistency. CPython, the primary
-Python virtual machine, maximizes these characteristics, which makes
-for a very predictable runtime. One would be hard pressed to find
-Python programmers concerned about garbage collection pauses. With
-strong platform and networking support, Python naturally lends itself
-to horizontal scalability.
+Python virtual machine, maximizes these characteristics, which in turn
+makes for a very predictable runtime. One would be hard pressed to
+find Python programmers concerned about garbage collection pauses or
+application startup time. With strong platform and networking support,
+Python naturally lends itself to smart horizontal scalability, as
+manifested in systems like [BitTorrent][bittorrent].
 
 Additionally, scaling is all about measurement and iteration. Python
 is built with profiling and optimization in mind. See Myth #4 for more
 details on how to vertically scale Python.
+
+[bittorrent]: http://bittorrent.cvs.sourceforge.net/viewvc/bittorrent/BitTorrent/
 
 ## Myth #6: Python is a new language
 
 What with all the startups using it and kids learning it these days,
 it's easy to see how this myth still persists. Python is actually 23
 years old, originally released in 1991, 4 years before Java. A
-now-famous early usage of Python was in 1996: Google's first
-successful web crawler.
+now-famous early usage of Python was in 1996: [Google's first
+successful web crawler][google_crawler].
 
 If you're curious about the long history of Python, Guido van Rossum,
 Python's creator, [has taken the care to tell the whole
 story][python_history].
 
 [python_history]: http://python-history.blogspot.com/2009/01/introduction-and-overview.html
+[google_crawler]: https://news.ycombinator.com/item?id=8587697
 
 ## Myth #7: Python is not for big projects
 

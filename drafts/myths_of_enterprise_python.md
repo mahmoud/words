@@ -345,16 +345,17 @@ necessity for a competitive business.
 [pyflakes]: https://github.com/pyflakes/pyflakes/
 [flake8]: https://pypi.python.org/pypi/flake8
 
-## Cleaning the slate
+## A clean slate
 
 Mythology can be a fun pastime. Discussions around these myths remain
-some of the most active and educational both internally and
-externally. It's not entirely tedious, because mplied in every
-discussion about a myth is a recognition of Python's strengths. Such a
-discussion is a sign of steadily growing interest. That said, here's
-hoping that this post managed to cool the flames of the most prevalent
-flame wars. If I've cleaned even one slate for a project proposal to
-talk about the actual work at hand, I've done my duty.
+some of the most active and educational, both internally and
+externally, because implied in every myth is a recognition of Python's
+strengths. Also, remember that the appearance of these seemingly tedious
+and troublesome concerns is a sign of steadily growing interest, and
+with steady influx of interested parties comes the constant job of
+education.  Here's hoping that this post manages to extinguish a flame
+war and enable a project or two to talk about the real work that can
+be achieved with Python.
 
 Keep an eye out for future posts where I'll dive deeper into the
 details touched on in this overview. In the meantime, happy coding!

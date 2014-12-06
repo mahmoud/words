@@ -1,32 +1,34 @@
 # 10 Myths of Enterprise Python
 
-Frequent readers of this blog are no doubt aware of the increasingly
-diverse techno-pluralist environment here at PayPal. In past posts
-we've showcased Java, JavaScript, Objective C, and Scala, but wouldn't
-you know it, PayPal's also got a long history with C++, Ruby (with the
-acquisition of [Braintree][braintree]), and you guessed it, [Python][python]. In
-this series of posts, I'll be detailing how the eBay/PayPal Python
-community grew from just under 25 engineers in 2011 to over 260 in
-2014, starting with a list of the most common concerns I have had to
-address over the years of building Python support at PayPal, and now
-eBay.
+PayPal enjoys a remarkable amount of linguistic pluralism in its
+programming culture.  In addition the long-standing popularity of C++
+and Java, an increasing number of teams are choosing JavaScript and
+Scala, while [Braintree][braintree]'s acquisition has introduced a rich and
+sophisticated Ruby community.
 
-Python has always been a language of choice for developers. Even
-before official support from management, developers went the extra
-mile to be able to reap the rewards of Python development. Python has
-enjoyed many years of grassroots usage and support from developers
-across eBay, Inc.. I've personally found Python code at PayPal dating
-back to Y2K, before the eBay acquisition.
+One language in particular has both a long history at eBay and PayPal
+and a growing mindshare among developers: [Python][python].
 
-Today, Python is used for over 50 projects across eBay, Inc.,
-including:
+Python has enjoyed many years of grassroots usage and support from
+developers across eBay, Inc.; even before official support from
+management, technology workers of all kinds went the extra mile to
+reap the rewards of developing in Python.  I've personally found
+Python code at PayPal from before the eBay acquisition!
+
+Today, Python powers over 50 projects, including:
 
   * Features and products, such as [eBay Now][ebay_local] and [RedLaser][redlaser]
-  * Operations and infrastructure, both [OpenStack][openstack] and proprietary
-  * Mid-tier services and applications, like the one used to set PayPal's prices and check customer feature eligibility
-  * Monitoring agents and interfaces, used for several deployment and security use cases
+  * Operations and infrastructure, both OpenStack and proprietary
+  * Mid-tier services and applications, like the one used to set
+    PayPal's prices and check customer feature eligibility
+  * Monitoring agents and interfaces, used for several deployment and
+    security use cases
   * Batch jobs for data import, price adjustment, and more
   * And far too many developer tools to count
+
+In the coming series of posts I'll detail the initiatives and
+technologies that led the eBay/PayPal Python community to grow from
+just under 25 engineers in 2011 to over 260 in 2014.
 
 [braintree]: https://www.braintreepayments.com/
 [python]: https://www.python.org/

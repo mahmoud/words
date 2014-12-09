@@ -29,7 +29,7 @@ Today, Python powers **over 50 projects**, including:
 
 In the coming series of posts I'll detail the initiatives and
 technologies that led the eBay/PayPal Python community to grow from
-just under 25 engineers in 2011 to over 260 in 2014. For this
+just under 25 engineers in 2011 to **over 260** in 2014. For this
 introductory post, I'll be focusing on the 10 myths I've had to
 debunk the most in eBay and PayPal's enterprise environments.
 
@@ -254,9 +254,9 @@ performance, especially in an enterprise setting.
 Given enough time, a disciplined developer can execute the only proven
 approach to achieving accurate and performant software:
 
-  1. Engineer for correct behavior, including the development of respective tests
-  2. Profile and measure performance, identifying bottlenecks
-  3. Optimize, paying proper respect to the test suite and [Amdahl's Law][amdahls],
+  1. **Engineer** for correct behavior, including the development of respective tests
+  2. **Profile** and measure performance, identifying bottlenecks
+  3. **Optimize**, paying proper respect to the test suite and [Amdahl's Law][amdahls],
   and taking advantage of Python's strong roots in C.
 
 It might sound simple, but even for seasoned engineers, this can be a
@@ -287,9 +287,13 @@ Scale has many definitions, but by any definition, [YouTube is a web
 site at scale][youtube_scale]. More than 1 billion unique visitors per
 month, over 100 hours of uploaded video per minute, and going on 20%
 of peak Internet bandwidth, all with Python as a core
-technology. [Dropbox][dropbox_scale], [Disqus][disqus_scale], Eventbrite, Twilio, Instagram, EVE
-Online, Second Life, and, yes, eBay and PayPal all have Python scaling
-stories that prove scale is more than just possible: it's a pattern.
+technology. [Dropbox][dropbox_scale], [Disqus][disqus_scale],
+[Eventbrite][eventbrite_scale], [Reddit][reddit_scale],
+[Twilio][twilio_scale], [Instagram][instagram_scale],
+[Yelp][yelp_scale], [EVE Online][eve_scale], [Second
+Life][second_life_scale], and, yes, eBay and PayPal all have Python
+scaling stories that prove scale is more than just possible: it's a
+pattern.
 
 The key to success is simplicity and consistency. CPython, the primary
 Python virtual machine, maximizes these characteristics, which in turn
@@ -306,6 +310,13 @@ is built with [profiling][profilers] and optimization in mind. See
 [dropbox_scale]: http://techcrunch.com/2013/07/11/how-did-dropbox-scale-to-175m-users-a-former-engineer-details-the-early-days/
 [youtube_scale]: https://www.youtube.com/yt/press/statistics.html
 [disqus_scale]: http://blog.disqus.com/post/62187806135/scaling-django-to-8-billion-page-views
+[eventbrite_scale]: http://www.infoworld.com/article/2608078/application-development/expert-interview--how-to-scale-django.html
+[reddit_scale]: http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html
+[twilio_scale]: http://www.slideshare.net/twilio/asynchronous-architectures-for-implementing-scalable-cloud-services-evan-cooke-gluecon-2012
+[instagram_scale]: http://www.slideshare.net/twilio/asynchronous-architectures-for-implementing-scalable-cloud-services-evan-cooke-gluecon-2012
+[yelp_scale]: http://www.slideshare.net/YelpEngineering/scale-presentation-michael-stoppelman-oct-2014
+[eve_scale]: http://highscalability.com/eve-online-architecture
+[second_life_scale]: http://highscalability.com/second-life-architecture-grid
 [bittorrent]: http://bittorrent.cvs.sourceforge.net/viewvc/bittorrent/BitTorrent/
 [profilers]: https://docs.python.org/2/library/profile.html
 
@@ -313,7 +324,54 @@ is built with [profiling][profilers] and optimization in mind. See
 <a name="myth-8"></a>
 ## <a href="#python-lacks-concurrency" name="python-lacks-concurrency">Myth #8</a>: Python lacks good concurrency support
 
-TBD
+Occasionally debunking [performance](#myth-6) and [scaling](myth-7)
+myths, and someone tries to get technical, "Python lacks concurrency,"
+or, "What about the GIL?" If dozens of counterexamples are
+insufficient to bolster one's confidence in Python's ability to scale
+vertically and horizontally, then an extended explanation of a
+[CPython][cpython] implementation detail probably won't help, so I'll
+keep it brief.
+
+Python has great concurrency primitives, including
+[generators][gen_concurrency], [greenlets][greenlet],
+[Deferreds][deferred], and [futures][futures]. Python has great
+concurrency frameworks, including [eventlet][eventlet],
+[gevent][gevent], and [Twisted][twisted]. Python has had some amazing
+work put into customizing runtimes for concurrency, including
+[Stackless][stackless] and [PyPy][pypy]. All of these and more show
+that there is no shortage of engineers effectively and
+unapologetically using Python for concurrent programming. Also, all of
+these are officially support and/or used in enterprise-level
+production environments. For examples, refer to [Myth #7](#myth-7).
+
+The Global Interpreter Lock, or GIL, is a performance optimization for
+most use cases of Python, and a development ease optimization for
+virtually all CPython code. The GIL makes it much easier to use OS
+threads or [green threads][greenthreads] (greenlets usually), and does
+not affect using multiple processes. For more information, [see this
+great Q&A on the topic][why_gil] and [this overview from the Python
+docs][conc_overview].
+
+Here at PayPal, a typical service deployment entails multiple
+machines, with multiple processes, multiple threads, and a very large
+number of greenlets, amounting to a very robust and scalable
+concurrent environment. In most enterprise environments, parties tends
+to prefer a fairly high degree of overprovisioning, for general
+prudence and disaster recovery. Nevertheless, in some cases Python services
+still see millions of requests per machine per day, handled with ease.
+
+[gen_conc]: http://www.slideshare.net/dabeaz/an-introduction-to-python-concurrency
+[greenlet]: https://greenlet.readthedocs.org/en/latest/
+[deferred]: https://twistedmatrix.com/documents/14.0.0/core/howto/defer.html
+[futures]: http://pythonhosted.org/futures/
+[eventlet]: http://eventlet.net/
+[gevent]: http://www.gevent.org/
+[greenthreads]: https://en.wikipedia.org/wiki/Green_threads
+[twisted]: https://twistedmatrix.com/trac/
+[stackless]: http://www.stackless.com/
+
+[why_gil]: http://programmers.stackexchange.com/questions/186889/why-was-python-written-with-the-gil
+[conc_overview]: https://docs.python.org/3/library/concurrency.html
 
 
 <a name="myth-9"></a>
@@ -328,8 +386,8 @@ That said, Python developers are far from scarce. There are millions
 worldwide, as evidenced by the dozens of Python conferences, tens of
 thousands of StackOverflow questions, and companies like YouTube, Bank
 of America, and LucasArts/Dreamworks employing Python developers by
-the hundreds and thousands. At eBay and PayPal we have over 200 developers who
-use Python on a regular basis, so what's the trick?
+the hundreds and thousands. At eBay and PayPal we have hundreds of
+developers who use Python on a regular basis, so what's the trick?
 
 Well, why scavenge when one can create? Python is exceptionally easy
 to learn, and is a first programming language [for
@@ -370,14 +428,14 @@ developers, with over 10 million lines of Python in one
 project alone][bofa_scale]. JP Morgan underwent [a similar
 transformation][jpmorgan_scale]. YouTube also has engineers in the
 thousands and lines of code [in the millions][youtube_hiscale]. Big
-products and big teams use Python every day. Python has excellent
-modularity and packaging characteristics, but beyond a certain point,
-much of the general development scaling advice stays the same:
-tooling, strong conventions, and code review are what make big
+products and big teams use Python every day, and while it has excellent
+modularity and packaging characteristics, beyond a certain point
+much of the general development scaling advice stays the same.
+Tooling, strong conventions, and code review are what make big
 projects a manageable reality.
 
 Luckily, Python starts with a good baseline on those fronts as
-well. We use [PyFlakes][pyflakes] and [other tools][flake8]to perform
+well. We use [PyFlakes][pyflakes] and [other tools][flake8] to perform
 static analysis of Python code before it gets checked in, as well as
 adhering to [PEP8][pep8], Python's language-wide base style guide.
 
@@ -416,5 +474,5 @@ be achieved with Python.
 
 Keep an eye out for future posts where I'll dive deeper into the
 details touched on in this overview. If you absolutely must have
-details before then, email me at mahmoud@paypal.com. Until then, happy
-coding!
+details before then, shoot me an email at mahmoud@paypal.com. Until
+then, happy coding!

@@ -1,9 +1,12 @@
 # On names
 
-Naming is hard. One of the two hard problems left in computer science,
-as the saying goes. That might be a bit much, but naming can make or
-break a codebase. Not to mention how that clumsy time spent searching
-for names impedes productive programming flow.
+Naming is hard. Hard enough to be one of the two remaining hard
+problems in computer science, as the saying goes. That might be a bit
+much, but in the long run, naming can make or break a codebase, and in
+the short run, good naming conventions are vital to coding flow. In
+meatspace, like in cyberspace, nothing is faster than a memory lookup,
+and nothing packs memory more efficiently than a well-designed
+mindhash.
 
 ## Values
 

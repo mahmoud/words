@@ -5,6 +5,12 @@ get painted nostalgic:
 
 ## Technical
 
+One explicit technical goal was many functionalities grouped together
+by a consistent quality and factor (lightweight, well-described), such
+that extensive cross-pollination of knowledge across subject matters
+could occur in the docs. Someone looking for a cache might learn a
+technique or two about debugging or statistics.
+
 Python 3 compatibility is a headache and between Ashes and Boltons, I
 think I've written enough infrastructural Python 3 to know. Everywhere
 I look I still see signs that Python 3 does not add to the success of
@@ -30,7 +36,7 @@ generally more intuitive and full-featured than `itertools`. Same with
 Learned a lot about Sphinx. Should probably enable more social media
 buttons on the Sphinx landing pages.
 
-## Personal
+## Process
 
 Boltons was a thing I remember telling people about at PyCon
 2013. Over two years later, it was in a shape that carried

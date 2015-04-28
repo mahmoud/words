@@ -47,7 +47,11 @@ Takeaways:
     tastes fine. Panna cotta is hard to find in Little Italy because
     few operators seemed to be Italian? I'm not sure I believe my
     friends than NYC brunch is a bigger deal than SF brunch, but it's
-    a frivolous and moot argument. Later hours very appreciated.
+    a frivolous and moot argument. Later hours very appreciated across
+    the board. Among the reasonably-priced sushi, 4+ star sushi in New
+    York gets maybe a 3 in SJ. That's strange because I've seen the
+    sourcing sheets for my favorite sushi place and a good chunk of
+    the stuff comes from the Atlantic.
 
   * NYC felt safer than SF overall. Fewer unhinged people. I did not
     witness a single shocking event in NYC, whereas I often see them
@@ -55,7 +59,10 @@ Takeaways:
     and Chinatown neighborhoods. The brand-new Queens night market
     seemed comparable to, but smaller and less noteworthy affair than
     SJ Japantown's Obon festival, which I'd never found impressive,
-    but maybe I should revise that assessment.
+    but maybe I should revise that assessment. NYC is not very
+    bike-friendly, both in terms of street safety and theft. Never saw
+    so many bike skeletons chained to signs, etc. In SF someone would
+    at least pick them up for the scrap.
 
   * Atmospherically, I'd probably prefer New York in the spring and
     fall, but SF in the summer and winter. SF probably smells worse on

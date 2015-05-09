@@ -1,0 +1,292 @@
+---
+breevs:
+  TGP: Tim Peters
+  GFB: Georg Brandl
+  BAC: Brett Cannon
+  NCN: Neal Norowitz
+  DJG: David Goodger
+  MvL: Martin van Loewis
+  GvR: Guido van Rossum
+  RDH: Raymond Hettinger
+---
+adds:
+  - name: Eric S. Raymond
+    date: 2 July 2000
+    by: TGP
+    for: General library work
+    type: dev
+  - name: Eric Price
+    date: 2 May 2003
+    by: TGP
+    for: decimal package
+    type: dev
+  - name: Nick Coghlan
+    date: 5 Apr 2005
+    by: RDH
+    for: Reviewing and contributing patches
+    type: tracker
+  - name: Terry Reedy
+    date: 7 Apr 2005
+    by: RDH
+    type: tracker
+  - name: Georg Brandl
+    date: 28 May 2005
+    by: RDH
+    for: Reviewing patches
+    type: tracker
+  - name: Georg Brandl
+    date: 28 May 2005
+    by: RDH
+    for: Reviewing patches
+    type: dev
+  - name: Gregory K Johnson
+    date: 8 Jul 2005
+    by: RDH
+    for: GSoC mailbox
+    type: dev
+    reco: Andrew Kuchling
+  - name: Flovis Bruynooghe
+    date: 8 Jul 2005
+    by: RDH
+    for: GSoC pstats, profile, hotshot
+    type: dev
+    reco: Brett Cannon
+  - name: Nick Coghlan
+    date: 16 Oct 2005
+    by: GvR
+    for: PEP updates
+    type: dev
+  - name: Bob Ippolito
+    date: 2 Mar 2006
+    by: NCN
+    for: Mac work
+    type: dev
+  - name: Ronald Oussoren
+    date: 3 Mar 2006
+    by: NCN
+    for: Mac work
+    type: dev
+  - name: George Yoshida
+    date: 14 Apr 2006
+    by: TGP
+    type: tracker
+  - name: Talin
+    date: 27 Apr 2006
+    by: DJG
+    for: PEP updates
+    type: dev
+  - name: Steven Bethard
+    date: 27 Apr 2006
+    by: DJG
+    for: PEP updates
+    type: dev
+  - name: Andrew Dalke
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: Christian Tismer
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: Jack Diederich
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: John Benediktsson
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: Kristján V. Jónsson
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: Martin Blais
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: Richard Emslie
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: Richard Jones
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: Runar Petursson
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: Steve Holden
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: Richard M. Tew
+    date: 17 May 2006
+    by: TGP
+    for: Need for Speed, Iceland sprint
+    type: dev
+  - name: Matt Fleming
+    date: 25 May 2006
+    by: AMK
+    for: GSoC, enhancing the Python debugger
+    type: dev
+  - name: Jackilyn Hoxworth
+    date: 25 May 2006
+    by: AMK
+    for: GSoC, adding logging to the standard library
+  - name: Mateusz Rukowicz
+    date: 30 May 2006
+    by: AMK
+    for: GSoC, translating decimal to C
+  - name: Lars Gustaebel
+    date: 20 Dec 2006
+    by: NCN
+    for: PEP updates
+  - name: Josiah Carlson
+    date: 6 Jan 2007
+    by: NCN
+    for: asyncore
+    type: tracker
+  - name: Steven Bethard
+    date: 26 Feb 2007
+    by: NCN
+    type: tracker
+  - name: Pat Maupin
+    date: 28 Feb 2007
+    by: NCN
+    for: PEP 3101 work
+  - name: Eric V. Smith
+    date: 28 Feb 2007
+    by: NCN
+    for: PEP 3101 work
+  - name: Pete Shinners
+    date: 4 Mar 2007
+    by: NCN
+    for: PEP 3101 work
+  - name: Ziga Seilnacht
+    date: 9 Mar 2007
+    by: MvL
+    for: General maintenance
+  - name: Travis Oliphant
+    date: 17 Apr 2007
+    by: MvL
+    for: implementing the extended buffer protocol
+  - name: Alexandre Vassalotti
+    date: 21 May 2007
+    for: GSoC
+    reco: Brett Cannon
+  - name: Senthil Kumaran
+    date: 16 June 2007
+    by: MvL
+    for: GSoC
+    reco: Skip Montanaro
+  - name: Armin Ronacher
+    date: 23 Jul 2007
+    by: GFB
+    for: documentation toolset, ast module
+  - name: Mark Summerfield
+    date: 1 Aug 2007
+    by: GFB
+    for: documentation
+  - name: Jeffrey Yasskin
+    date: 9 Aug 2007
+    by: NCN
+    for: PEP updates and other patches
+  - name: Bill Janssen
+    date: 28 Aug 2007
+    by: NCN
+    for: ssl module and socket work
+  - name: Chris Monson
+    date: 20 Oct 2007
+    by: NCN
+    for: PEP updates
+  - name: Christian Heimes
+    date: 31 Oct 2007
+    by: MvL
+    for: General contributions
+  - name: Amaury Forgeot d\'Arc
+    date: 9 Nov 2007
+    by: MvL
+    for: General contributions
+  - name: Mark Dickinson
+    date: 6 Jan 2008
+    by: Facundo Batista
+    for: math- and number-related work
+  - name: Trent Nelson
+    date: 17 Mar 2008
+    by: MvL
+    for: General contributions
+  - name: David Wolever
+    date: 17 Mar 2008
+    by: MvL
+    for: 2to3 work
+  - name: Jeff Rush
+    date: 18 Mar 2008
+    by: AMK
+    for: distutils work
+  - name: Jerry Seutter
+    date: 20 Mar 2008
+    by: BAC
+    for: General contributions
+  - name: Benjamin Peterson
+    date: 25 Mar 2008
+    by: GFB
+    for: Bug triage work
+  - name: Josiah Carlson
+    date: 26 Mar 2008
+    by: GFB
+    for: asyncore and asynchat work
+  - name: Jeroen Ruigrok van der Werven
+    date: 12 Apr 2008
+    by: GFB
+    for: Documentation work
+  - name: Thomas Lee
+    date: 21 Apr 2008
+    by: NCN
+    for: Branch AST and optimizer work
+  - name: Guilherme Polo
+    date: 24 Apr 2008
+    by: MvL
+    for: GSoC
+  - name: Jesus Cea
+    date: 24 Apr 2008
+    by: MvL
+    for: maintenance of bsddb
+  - name: Heiko Weinen
+    date: 29 Apr 20088
+    by: MvL
+    for: GSoC
+  - name: Rodrigo Bernardo Pimentel
+    date: 29 April 2008
+    by: MvL
+    for: GSoC
+  - name: Robert Schuppenies
+    date: 21 May 2008
+    by: MvL
+    for: GSoC
+  - name: Gregor Lingle
+    date: 10 June 2008
+    by: MvL
+    for: turtle module work
+  - name: Jesse Noller
+    date: 16 June 2008
+    by: GFB
+    for: multiprocessing work
+  - name: Antoine Pitrou
+    date: 16 July 2008
+    by: GvR
+    for: General contributions
+  - name: Hirokazu Yamamoto
+    date: 12 Aug 2008
+    by: MvL
+    for: contributions to the Windows build

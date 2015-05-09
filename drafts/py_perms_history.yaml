@@ -9,6 +9,7 @@ breevs:
   GvR: Guido van Rossum
   RDH: Raymond Hettinger
 ---
+# type: dev unless otherwise specified
 adds:
   - name: Eric S. Raymond
     date: 2 July 2000
@@ -50,7 +51,7 @@ adds:
     by: RDH
     for: GSoC pstats, profile, hotshot
     type: dev
-    reco: Brett Cannon
+    reco: BAC
   - name: Nick Coghlan
     date: 16 Oct 2005
     by: GvR
@@ -184,7 +185,7 @@ adds:
   - name: Alexandre Vassalotti
     date: 21 May 2007
     for: GSoC
-    reco: Brett Cannon
+    reco: BAC
   - name: Senthil Kumaran
     date: 16 June 2007
     by: MvL
@@ -290,3 +291,366 @@ adds:
     date: 12 Aug 2008
     by: MvL
     for: contributions to the Windows build
+  - name: Tarek Ziadé
+    date: 21 Dec 2008
+    by: NCN
+    for: maintenance of distutils
+  - name: Chris Withers
+    date: 8 Mar 2009
+    by: MvL
+    reco: GvR
+  - name: R. David Murray
+    date: 30 Mar 2009
+    by: MvL
+    reco: BAC
+  - name: Allison Randal
+    date: 1 Apr 2009  # no exact date provided
+    by: MvL
+    for: alternative Python implementation test suite and library adaptation (Parrot)
+  - name: Michael Foord
+    date: 1 Apr 2009  # no exact date provided
+    by: MvL
+    for: alternative Python implementation test suite and library adaptation (IronPython)
+  - name: Jim Baker
+    date: 1 Apr 2009  # no exact date provided
+    by: MvL
+    for: alternative Python implementation test suite and library adaptation
+  - name: Philip Jenvey
+    date: 1 Apr 2009  # no exact date provided
+    by: MvL
+    for: alternative Python implementation test suite and library adaptation
+  - name: Frank Wierzbicki
+    date: 1 Apr 2009  # no exact date provided
+    by: MvL
+    for: alternative Python implementation test suite and library adaptation
+  - name: Ron DuPlain
+    date: 2 Apr 2009
+    by: BAC
+    for: 3to2 work
+  - name: Paul Kippes
+    date: 2 Apr 2009
+    by: BAC
+    for: 3to2 work
+  - name: Ezio Melotti
+    date: 7 Jun 2009
+    by: GFB
+    for: documentation
+  - name: Doug Hellman
+    date: 19 Sep 2009
+    by: GFB
+    for: documentation
+    reco: Jesse Noller
+  - name: Stefan Krah
+    date: 5 Jan 2010
+    by: GFB
+    for: decimal module
+    reco: Mark Dickinson
+  - name: Victor Stinner
+    date: 30 Jan 2010
+    by: MvL
+    reco: ["Mark Dickinson", "Amaury Forgeot d'Arc"]
+  - name: Larry Hastings
+    date: 22 Feb 2010
+    by: AMK
+    reco: BAC
+  - name: Dino Viehland
+    date: 23 Feb 2010
+    by: BAC
+    for: backporting tests from IronPython
+  - name: Florent Xicluna
+    date: 25 Feb 2010
+    by: MvL
+    reco: Antoine Pitrou
+  - name: Brian Curtin
+    date: 24 Mar 2010
+    by: MvL
+  - name: Jean-Paul Calderone
+    date: 6 Apr 2010
+    by: GFB
+    reco: Michael Foord
+  - name: Giampaolo Rodolà
+    date: 17 Apr 2010
+    by: MvL
+    reco: R. David Murray
+  - name: Tim Golden
+    date: 21 Apr 2010
+    by: MvL
+    reco: Michael Foord
+  - name: Alexander Belopolsky
+    date: 25 May 2010
+    by: MvL
+    reco: Mark Dickinson
+  - name: Reid Kleckner
+    date: 11 Jul 2010
+    by: GFB
+    for: py3k-jit branch
+    reco: Unladen Swallow team
+  - name: Brian Quinlan
+    date: 26 Jul 2010
+    by: GFB
+    for: PEP 3148 work
+  - name: Terry Reedy
+    date: 4 Aug 2010
+    by: GFB
+    reco: Nick Coghlan
+  - name: Éric Araujo
+    date: 10 Aug 2010
+    by: BAC
+    reco: Tarek Ziadé
+  - name: George Boutsioukis
+    date: 10 Aug 2010
+    by: MvL
+    for: 2to3 work
+  - name: Ask Solem
+    date: 17 Aug 2010
+    by: MvL
+    for: multiprocessing work
+    reco: Jesse Noller
+  - name: Daniel Stutzbach
+    date: 22 Aug 2010
+    by: MvL
+    for: General bug fixing
+  - name: Łukasz Langa
+    date: 8 Sep 2010
+    by: GFB
+    for: General bug fixing
+    reco: Antoine Pitrou
+  - name: Tal Einat
+    date: 4 Oct 2010
+    by: MvL
+    for: improving IDLE
+  - name: Ned Deily
+    date: 9 Jan 2011
+    by: MvL
+    reco: Antoine Pitrou
+  - name: Eli Bendersky
+    date: 11 Jan 2011
+    by: BAC
+    reco: ['Terry Reedy', 'Nick Coghlan']
+  - name: Ross Lagerwall
+    date: 13 Mar 2011
+    by: GFB
+    reco: ['Antoine Pitrou', 'Ned Deily']
+  - name: Alex Gaynor
+    date: 13 Mar 2011
+    by: BAC
+    for: stdlib compatibility work for PyPy
+  - name: Maciej Fijalkowski
+    date: 13 Mar 2011
+    by: BAC
+    for: stdlib compatibility work for PyPy
+  - name: Jeff Hardy
+    date: 14 Mar 2011
+    by: BAC
+    for: stdlib compatibility work for IronPython
+  - name: Alexis Métaireau
+    date: 16 Mar 2011
+    by: GFB
+    for: packaging module work
+  - name: Elson Rodriguez
+    date: 16 Mar 2011
+    by: GFB
+    for: packaging module work
+  - name: Kelsey Hightower
+    date: 16 Mar 2011
+    by: GFB
+    for: packaging module work
+  - name: Michael Mulich
+    date: 16 Mar 2011
+    by: GFB
+    for: packaging module work
+  - name: Walker Hale
+    date: 16 Mar 2011
+    by: GFB
+    for: packaging module work
+  - name: Carl Friedrich Bolz
+    date: 21 Mar 2011
+    by: BAC
+    for: stdlib compatibilty work for PyPy
+  - name: Nadeem Vawda
+    date: 10 Apr 2011
+    by: GFB
+    for: General contributions
+    reco: Antoine Pitrou
+  - name: Charles-François Natali
+    date: 19 May 2011
+    by: Antoine Pitrou
+    for: General contributions
+    reco: ['Victor Stinner', 'Brian Curtin']
+  - name: Sandro Tosi
+    date: 1 Aug 2011
+    by: Antoine Pitrou
+    for: documentation
+    reco: ['Ezio Melotti', 'R. David Murray']
+  - name: Meador Inge
+    date: 19 Sep 2011
+    by: GFB
+    for: General contributions
+    reco: Mark Dickinson
+  - name: Petri Lehtinen
+    date: 22 Oct 2011
+    by: GFB
+    for: General contributions
+    reco: Antoine Pitrou
+  - name: Andrew Svetlov
+    date: 13 Mar 2012
+    by: MvL
+    for: PyCon 2012 sprint
+  - name: Richard Oudkerk
+    date: 29 Apr 2012
+    by: Antoine Pitrou
+    for: multiprocessing
+    reco: ['Charles-François Natali', 'Jesse Noller']
+  - name: Hynek Schlawack
+    date: 14 May 2012
+    by: Antoine Pitrou
+    for: General contributions
+  - name: Peter Moody
+    date: 20 May 2012
+    by: Antoine Pitrou
+    for: Authorship and maintenance of the ipaddress module (PEP 3144)
+  - name: Eric Snow
+    date: 5 Sep 2012
+    by: Antoine Pitrou
+    for: General contributions
+    reco: Nick Coghlan
+  - name: Daniel Holth
+    date: 9 Sep 2012
+    by: GFB
+    for: PEP updates
+  - name: Chris Jerdonek
+    date: 24 Sep 2012
+    by: GFB
+    for: General contributions
+    reco: Ezio Melotti
+  - name: Serhiy Storchaka
+    date: 26 Dec 2012
+    by: GFB
+    for: General contributions
+    reco: Trent Nelson
+  - name: Roger Serwy
+    date: 21 Mar 2013
+    by: GFB
+    for: IDLE work
+    reco: Ned Deily
+  - name: Ethan Furman
+    date: 11 May 2013
+    by: BAC
+    for: PEP 435 work
+    reco: Eli Bendersky
+  - name: Donald Stufft
+    date: 14 Aug 2013
+    by: BAC
+    for: PEP editing
+    reco: Nick Coghlan
+  - name: Zachary Ware
+    date: 2 Nov 2013
+    by: BAC
+    reco: Brian Curtin
+  - name: Yury Selivanov
+    date: 23 Jan 2014
+    by: GFB
+    for: inspect module and general contributions
+    reco: Nick Coghlan
+  - name: Steven d\'Aprano
+    date: 8 Feb 2014
+    by: BAC
+    for: statistics module
+    reco: Nick Coghlan
+  - name: Kushal Das
+    date: 14 Apr 2014
+    by: BAC
+    for: General contributions
+    reco: Michael Foord
+  - name: Steve Dower
+    date: 10 May 2014
+    by: Antoine Pitrou
+    reco: MvL
+  - name: Berker Peksağ
+    date: 26 June 2014
+    by: Benjamin Peterson
+    reco: R. David Murray
+  - name: Darjus Loktevic
+    date: 26 July 2014
+    by: BAC
+    for: Jython development
+    reco: Jim Baker
+  - name: Robert Collins
+    date: 16 Oct 2014
+    by: BAC
+    for: unittest work
+    reco: Michael Foord
+  - name: Stefan Richthofer
+    date: 27 Oct 2014
+    by: GFB
+    for: Jython work
+    reco: Frank Wierzbicki
+  - name: Santoso Wijaya
+    date: 29 Oct 2014
+    by: GFB
+    for: Jython work
+    reco: Frank Wierzbicki
+  - name: Chris Angelico
+    date: 1 Dec 2014
+    by: GFB
+    for: PEP updates
+  - name: Paul Moore
+    date: 18 Mar 2015
+    by: BAC
+    reco: BAC
+---
+# reason: requested unless otherwise specified
+drops:
+  - name: Skip Montanaro
+    date: 21 Apr 2015
+    by: BCP
+    request: https://bugs.python.org/msg241740
+  - name: Roy Smith
+    date: 4 Aug 2008
+    by: GFB
+  - name: Matt Fleming
+    date: 4 Aug 2008
+    by: GFB
+  - name: Richard Emslie
+    date: 4 Aug 2008
+    by: GFB
+  - name: Gregory K Johnson
+    date: 16 Oct 2005
+    by: RDH
+  - name: Johannes Gijsbers
+    date: 27 July 2005
+    by: RDH
+  - name: Flovis Bruynooghe
+    date: 14 July 2005
+    by: RDH
+  - name: Paul Prescod
+    date: 30 Apr 2005
+    by: RDH
+  - name: Finn Bock
+    date: 13 Apr 2005
+    by: RDH
+  - name: Eric Price
+    date: 10 Apr 2005
+    by: RDH
+  - name: Irmen de Jong
+    date: 10 Apr 2005
+    by: RDH
+  - name: Moshe Zadka
+    date: 8 Apr 2005
+    by: RDH
+  - name: Ken Manheimer
+    date: 8 Apr 2005
+    by: RDH
+  - name: Charles G Waldman
+    date: 8 Apr 2005
+    by: RDH
+    reason: Loss of contact
+  - name: Steve Holden
+    date: 7 Apr 2005
+    by: RDH
+  - name: Gerhard Haring
+    date: 7 Apr 2005
+    by: RDH
+  - name: David Cole
+    date: 7 Apr 2005
+    by: RDH

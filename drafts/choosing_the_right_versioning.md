@@ -65,6 +65,40 @@ goes. Better to embrace the realities and treat SemVer as a detailed
 recommendation rather than to argue over the polarizing MUSTs and MUST
 NOTs of specification language.
 
+Criticisms:
+
+### Encourages breakages
+
+Everyone knows it's more exciting to announce 2.0 than 1.5.11, even if
+there's more user demand for the latter than the former. This is
+especially true with SemVer, which mandates that an upgrade to 2.0
+indicates breaking API changes. Conversely, good software could be
+assessed as inferior or less mature because its version number is
+lower, even though it may have just done a particularly good job.
+
+### Barrier to major releases
+
+The inverse problem of the sort of the 2.0 breakage is the Zeno's
+paradox 1.0. Conservative library authors may end up indefinitely
+preferring the safety umbrella that a 0.x version entails. The ability
+to break APIs. Whether humility or conservatism run amock, it largely
+misrepresents the release state of many major libraries.
+
+At the risk of oversimplifying:
+
+  * If both you (or your team) **and** a stranger (someone not
+    directly advised) are both using a library in a production
+    environment, the time for a major version has been reached.
+
+If it's just you and yours, that's understandable; many great
+scientists took great risks with themselves for the sake of
+progress. If it's just a stranger going against your explicit advice,
+then there's no accounting for such wildcards. But if both of groups
+are using something effectively in production, then it's time to face
+the facts. Tie up the loosest of ends and give it a major version.
+
+Semantic
+
 ## Calendar versioning
 
 If you're an earnest engineer with honest intents of creating a

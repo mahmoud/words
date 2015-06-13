@@ -65,7 +65,7 @@ goes. Better to embrace the realities and treat SemVer as a detailed
 recommendation rather than to argue over the polarizing MUSTs and MUST
 NOTs of specification language.
 
-Criticisms:
+## Challenges
 
 ### Encourages breakages
 
@@ -114,6 +114,23 @@ project for the long run, then calendar versioning may be for you.
 * If your project is being used in production by you AND someone you
   don't know, the time for a non-beta major release has already been reached.
 
+### Advantages
+
+SemVer is all relative, and one developer's 1.0 is another's
+0.0.1alpha. As a library author, it's easy to write this off as others
+being wrong. However, as an application developer who will be
+depending on many libraries, one major advantage of calendar
+versioning is being able to look at the dependency list and quick
+ascertain which libraries are good candidates for updating.
+
+
+## Summary
+
+In the end a versioning scheme often isn't something that can be
+chosen ready off the shelf. After spending days, weeks, and months on
+a project architecture, it's worthwhile to spend a few minutes or
+hours designing a versioning system that is tailored to the needs of
+its users and author.
 
 # PyPI recent 40
 

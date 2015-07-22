@@ -1,4 +1,4 @@
-# Choosing The Right Versioning System for your Project
+# Choosing The Right Versioning System For Your Project
 <!-- or What Your Project's Version Says About You -->
 
 In these times of modern software development, a project can hardly be
@@ -16,34 +16,46 @@ mostly afterthoughts and foregone conclusions. This guide seeks to
 change that by introducing some options and direction for picking the
 versioning scheme that is right for projects and their maintainers.
 
-## A few collected expectations
+## Collective Expectations
 
-It's almost impossible to write more software than one encounters. As
-a result, we have some general expectations about version numbers.
+I encounter and use far more software than I write, and I'm pretty
+sure that holds true for all engineers. As a result, we accumulate
+general expectations about version numbers.
 
-1. Versions increase with time - Bigger is better, less would be worse
-2. Versions speak to the quality of the software - Whereas a good
+1. **Versions increase with time** - Bigger is better, less would be worse.
+2. **Versions speak to the quality of the software** - Whereas a good
    project name communicates an ideal, a good project version
-   communicates the progress toward that ideal
-3. Versions are trackable - Continuity is a good thing. Irregular gaps
-   can cause confusion
-4. Versions are numeric, except when they're not - Numeric versions are
+   communicates the progress toward that ideal.
+3. **Versions are trackable** - Continuity is a good thing. Irregular gaps
+   can cause confusion.
+4. **Versions are numeric, except when they're not** - Numeric versions are
    the default, but non-numeric versions and version components
-   abound.
-
-<!-- TODO: case studies in all of the above? -->
-
-1. Chrome came along with a fast feature release schedule and a
-   versioning system to match, a versioning system that made Firefox
-   appear to be left in the dust. Firefox later changed its versioning
-   system.
-
-4. Terms like "alpha" and "beta", as well as named project versions
+   abound. Terms like "alpha" and "beta", as well as named project versions
    like those used in Linux distributions (Debian's "jessie" or Ubuntu's
    "trusty"), are well-understood in many circles.
 
+<!-- TODO: case studies in all of the above? -->
 
-## Semantic versioning
+Like them or not, there's no escaping these versioning tropes, and
+while they may seem trivial or obvious, versions are fundamental
+enough that the long-term effects can be profound. For instance, with
+regard to #1, bigger versions are generally considered better,
+especially within a project. However, there are cases where this
+impact spilled out across projects.
+
+For instance, when Google Chrome entered the browser race, it brought
+with it a fast feature release schedule and a versioning system to
+match. This versioning system had Chrome see a dozen major releases
+while Firefox was still 3.x, making Firefox appear to be left in the
+dust. Obviously Chrome was less mature and, as anyone who used it at
+the time can attest, Chrome 4 wasn't half the browser Firefox 4 ended
+up being. After a couple years of this onslaught, Firefox switched its
+versioning system to match, and now, despite browsing for hours a day,
+few users or even developers could tell you off the top of their heads
+what version of Firefox/Chrome they use. Internet Explorer might be
+another story.
+
+## Semantic Versioning
 
 Semantic Versioning, or SemVer, is the go-to versioning system for
 most projects these days. A quick glance at the 40 most recent updates
@@ -96,8 +108,6 @@ progress. If it's just a stranger going against your explicit advice,
 then there's no accounting for such wildcards. But if both of groups
 are using something effectively in production, then it's time to face
 the facts. Tie up the loosest of ends and give it a major version.
-
-Semantic
 
 ## Calendar versioning
 

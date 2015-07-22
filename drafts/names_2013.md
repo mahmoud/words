@@ -28,9 +28,10 @@ Now, desirable characteristics to maximize in variable names:
 
 ## Key conventions
 
-1. method names should almost exclusively start with a verb, especially
-   when the `get_*()` pattern is applicable, where `*` is a description of
-   what is being returned. This enables rule #2.
+1. Method names should start with a verb, especially when the
+   `get_*()` pattern is applicable, where `*` describes the return
+   value. This enables rule #2. Avoid verbs which commonly double as
+   nouns and adjectives, e.g., `empty_*`.
 2. When referring to a value that'll be returned, use `ret`. The
    nature of the value in `ret` is implied by the name of the
    method. The prevailing patterns here involve the construction of an
